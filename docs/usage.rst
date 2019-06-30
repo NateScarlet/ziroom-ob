@@ -4,3 +4,6 @@
 使用 docker-compose 。
 
 实例文件在 ``deployments`` 文件夹下。
+
+房间链接建议在手机版自如上使用分享到 QQ 传到电脑。
+PC 版似乎信息不全。
