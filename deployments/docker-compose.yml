@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  app:
+    build: '..'
+    restart: 'unless-stopped'
+    env_file:
+      - .env
+    volumes:
+      - '/tmp/ziroom-ob/db'

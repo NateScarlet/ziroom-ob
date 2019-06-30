@@ -1,0 +1,10 @@
+.git
+.vscode
+.dockerignore
+.gitignore
+Dockerfile
+.env
+
+/.env
+/deployments
+/docs
