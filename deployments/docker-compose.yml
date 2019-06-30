@@ -1,6 +1,7 @@
 version: '2.4'
 services:
   app:
+    container_name: ziroom-ob
     build: '..'
     restart: 'unless-stopped'
     env_file:
