@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>环境变量 &#8212; ziroom-ob 0.1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="自如 API" href="api.html" />
+    <link rel="prev" title="使用方法" href="usage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>环境变量<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>通过环境变量来配置，将会自动读取当前工作目录的 <code class="docutils literal notranslate"><span class="pre">.env</span></code> 文件。</p>
+<p>EMAIL_HOST</p>
+<blockquote>
+<div>邮件主机</div></blockquote>
+<p>EMAIL_PORT</p>
+<blockquote>
+<div>邮件端口</div></blockquote>
+<p>EMAIL_USER</p>
+<blockquote>
+<div>邮件主机上的用户名，默认为 <code class="docutils literal notranslate"><span class="pre">EMAIL_FROM</span></code>。</div></blockquote>
+<p>EMAIL_PASSWORD</p>
+<blockquote>
+<div>邮件密码</div></blockquote>
+<p>EMAIL_FROM</p>
+<blockquote>
+<div>邮件来自地址。</div></blockquote>
+<p>EMAIL_TO</p>
+<blockquote>
+<div>邮件发往地址， 默认为 <code class="docutils literal notranslate"><span class="pre">EMAIL_FROM</span></code>。</div></blockquote>
+<p>ROOM_LINKS</p>
+<blockquote>
+<div><p>空格分隔的房间详情页URL列表。</p>
+<p>例子: <code class="docutils literal notranslate"><span class="pre">http://www.ziroom.com/z/vr/61819181.html</span> <span class="pre">http://m.ziroom.com/BJ/room?id=61819181</span></code></p>
+</div></blockquote>
+<p>POLL_INTERVAL</p>
+<blockquote>
+<div><p>默认值: 30 秒</p>
+<p>房间信息轮询间隔，使用 golang 时间长度字符串，例如: <code class="docutils literal notranslate"><span class="pre">1h2m3s</span></code>。</p>
+</div></blockquote>
+<p>DATABASE_DIR</p>
+<blockquote>
+<div><p>默认值: <code class="docutils literal notranslate"><span class="pre">/tmp/ziroom-ob/db</span></code></p>
+<p>数据库文件夹。</p>
+</div></blockquote>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ziroom-ob</a></h1>
+
+
+
+<p class="blurb">自如抢房监控</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=NateScarlet&repo=ziroom-ob&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption"><span class="caption-text">内容:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">使用方法</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">环境变量</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">自如 API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="usage.html" title="上一章">使用方法</a></li>
+      <li>Next: <a href="api.html" title="下一章">自如 API</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, NateScarlet <NateScarlet@Gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/env-vars.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

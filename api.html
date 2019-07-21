@@ -1,0 +1,181 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>自如 API &#8212; ziroom-ob 0.1.0 文档</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="环境变量" href="env-vars.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="api">
+<h1>自如 API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h1>
+<p>使用自如手机版的 API: <code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">http://m.ziroom.com/wap/detail/room.json</span></code></p>
+<p>参数:</p>
+<p>city_code</p>
+<blockquote>
+<div>城市码，通过码表对应。</div></blockquote>
+<p>id</p>
+<blockquote>
+<div>房间ID</div></blockquote>
+<p>相应值:</p>
+<p>status</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>操作状态，成功时应为 <code class="docutils literal notranslate"><span class="pre">success</span></code>。</p>
+</div></blockquote>
+<p>error_code</p>
+<blockquote>
+<div><p>类型: int</p>
+<p>错误码，成功时应为 <code class="docutils literal notranslate"><span class="pre">0</span></code>。</p>
+</div></blockquote>
+<p>error_message</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>错误信息， 成功时应为空字符串。</p>
+</div></blockquote>
+<p>data.id</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>房间 ID , 应为查询时使用房间ID。</p>
+</div></blockquote>
+<p>data.code</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>房间编码，自如全站唯一。</p>
+</div></blockquote>
+<p>data.house_code</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>房屋编码，自如全站唯一。</p>
+</div></blockquote>
+<p>data.city_code</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>城市编码，应为查询时使用的城市编码。</p>
+</div></blockquote>
+<p>data.status</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>房间状态代码，通过码表对应。</p>
+</div></blockquote>
+<p>data.name</p>
+<blockquote>
+<div><p>类型: string</p>
+<p>房间名称。</p>
+</div></blockquote>
+<p>data.notice_word</p>
+<blockquote>
+<div><p>类型: string | undefined</p>
+<p>房间额外状态，空气检测中的房子值应为 <code class="docutils literal notranslate"><span class="pre">空气检测中</span></code></p>
+</div></blockquote>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">ziroom-ob</a></h1>
+
+
+
+<p class="blurb">自如抢房监控</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=NateScarlet&repo=ziroom-ob&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption"><span class="caption-text">内容:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">使用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="env-vars.html">环境变量</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">自如 API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="env-vars.html" title="上一章">环境变量</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, NateScarlet <NateScarlet@Gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
